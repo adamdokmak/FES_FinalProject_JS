@@ -55,7 +55,24 @@
 <section id="main">
     <div class="search--container">
         <div class="search-results">
-            <h2 class="main__title">Results:</h2>
+            <h2 class="main__title">Top 20 movies:</h2>
+            <div class="filters__contianer">
+
+                <div class="filter filter1" onclick="toggleActive('filter1'); filterAction()">
+                    <h1 class="filter__title ">Action</h1>
+                </div>
+                <div class="filter filter2" onclick="toggleActive('filter2'); filterComedy()">
+                    <h1 class="filter__title">Comedy</h1>
+                </div>
+                <div class="filter filter3" onclick="toggleActive('filter3'); filterHorror()">
+                    <h1 class="filter__title">Horror</h1>
+                </div>
+
+                <div class="filter filter4" onclick="toggleActive('filter4'); filterRomance()">
+                    <h1 class="filter__title">Romance</h1>
+                </div>
+
+            </div>
         </div>
         <div class="movies__container">
 
