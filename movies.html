@@ -20,12 +20,12 @@
         </figure>
         <ul class="nav__link--list regulated-z">
             <li class="nav__link--btn">
-                <a href="/index.html"
+                <a href="http://localhost:63342/FES_FinalProject_JS/index.html?_ijt=tubhh8jtv391i1jgs5hnq5dft3&_ij_reload=RELOAD_ON_CHANGE"
                    class="link__hover">
                     Home
                 </a></li>
             <li class="nav__link--btn">
-                <a href="/movies.html"
+                <a href="http://localhost:63342/FES_FinalProject_JS/movies.html?_ijt=bbq8jvces13m0hq5upj0g8u2bc&_ij_reload=RELOAD_ON_CHANGE"
                    class="link__hover">
                     Find your movie
                 </a></li>
@@ -40,22 +40,31 @@
         <h1 class="hero__title regulated-z">Browse our movies</h1>
         <div class="search-bar__content regulated-z">
             <div class="search-bar__container">
-                <input id="searchField" type="text" value="" placeholder="Search by Name" class="search-bar" onchange="getSearchResult()">
+                <input id="searchField" type="text" value="" placeholder="Search by Name" class="search-bar"
+                       onchange="getSearchResult(); searchOrClear()">
                 <div class="search__button">
-                    <i class="fa-solid fa-magnifying-glass" id="searchButton" onclick="getSearchResult()"></i>
+
+                </div>
+                <div class="clear-value">
+
                 </div>
             </div>
         </div>
     </header>
 </section>
 <section id="main">
-    <div class="search-results">
-        <h2 class="main__title">Results:</h2>
-    </div>
-    <div class="movies__container">
+    <div class="search--container">
+        <div class="search-results">
+            <h2 class="main__title">Results:</h2>
+        </div>
+        <div class="movies__container">
 
+        </div>
     </div>
 </section>
+<div class="nothing-found__screen">
+
+</div>
 
 </body>
 </html>
