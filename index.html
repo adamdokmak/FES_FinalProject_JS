@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/5124415649.js" crossorigin="anonymous"></script>
+    <script src="movies.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Final Project</title>
+</head>
+<body>
+<section id="main-page">
+    <nav>
+        <figure>
+            <img src="assets/logo.png" alt="" class="header__img">
+        </figure>
+        <ul class="nav__link--list">
+            <li class="nav__link--btn">
+                <a href="http://localhost:63342/FES_FinalProject_JS/index.html?_ijt=tubhh8jtv391i1jgs5hnq5dft3&_ij_reload=RELOAD_ON_CHANGE" class="link__hover--active active">
+                    Home
+                </a></li>
+            <li class="nav__link--btn">
+                <a href="http://localhost:63342/FES_FinalProject_JS/movies.html?_ijt=bbq8jvces13m0hq5upj0g8u2bc&_ij_reload=RELOAD_ON_CHANGE" class="link__hover">
+                    Find your movie
+                </a></li>
+            <li class="nav__link--btn">
+                <a href="#" class="contact__btn contact__container">
+                    CONTACT
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header">
+        <div class="header__content">
+            <h1 class="hero__title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">View your favorite movie's ratings easily</h1>
+            <h4 class="hero__sub-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">FIND THE RIGHT MOVIE FOR <span class="hero__sub-title--color">THE NIGHT</span>
+            </h4>
+        </div>
+        <div class="search-bar__content" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+            <input id='searchField' type="text" placeholder="Search by Name" class="search-bar" onchange="redirectSearch()">
+            <button class="search-bar__button" onclick="redirectSearch()">
+                <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+            </button>
+        </div>
+        <img src="assets/hero.svg" alt="" class="hero__img">
+    </header>
+</section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
