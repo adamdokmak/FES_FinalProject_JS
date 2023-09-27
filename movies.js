@@ -68,7 +68,7 @@ async function getSearchResult() {
 
 function redirectSearch() {
     let userInput = document.getElementById('searchField').value
-    window.location.replace(`http://localhost:63342/FES_FinalProject_JS/movies.html?search=${userInput}`)
+    window.location.replace(`${window.location.origin}/FES_FinalProject_JS/movies.html?search=${userInput}`)
 }
 
 
@@ -76,7 +76,7 @@ function urlTest() {
     let userInput = document.getElementById('searchField').value
     const newState = {page: 'search', query: `${userInput}`};
     const newTitle = 'Search Results for "example"';
-    const newURL = `http://localhost:63342/FES_FinalProject_JS/movies.html?search=${userInput}`;
+    const newURL = `${window.location.origin}/FES_FinalProject_JS/movies.html?search=${userInput}`;
     history.pushState(newState, newTitle, newURL);
 }
 
