@@ -366,4 +366,25 @@ nav {
     box-shadow: none;
 
 }
+.page__back, .page__next {
+    margin: 0 10px;
+    width: 25px;
+    height: 25px;
+    background-color: #602FB1;
+    cursor: pointer;
+    border-radius: 24px;
+}
 
+.page__selector {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page__move--container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
