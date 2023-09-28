@@ -181,3 +181,9 @@ nav {
 }
 /*Main END*/
 
+.fa-spinner {
+    scale: 3;
+    display: none;
+}
+
+

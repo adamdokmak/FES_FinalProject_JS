@@ -40,9 +40,10 @@
             </h4>
         </div>
         <div class="search-bar__content" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
-            <input id='searchField' type="text" placeholder="Search by Name" class="search-bar" onchange="redirectSearch()">
-            <button class="search-bar__button" onclick="redirectSearch()">
+            <input id='searchField' type="text" placeholder="Search by Name" class="search-bar" onchange="btnLoadingState(); redirectSearch()">
+            <button class="search-bar__button" onclick="btnLoadingState(); redirectSearch()">
                 <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+                <i class="fa-solid fa-spinner fa-spin" style="color: white;"></i>
             </button>
         </div>
         <img src="assets/hero.svg" alt="" class="hero__img">

@@ -221,6 +221,14 @@ nav {
     width: 100%;
 }
 
+.fa-spinner {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    scale: 10;
+    display: none;
+}
+
 .noimage {
     scale: 1.2;
 }
@@ -358,3 +366,4 @@ nav {
     box-shadow: none;
 
 }
+

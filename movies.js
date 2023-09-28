@@ -65,15 +65,20 @@ function searchOrClear() {
 }
 
 async function renderPost(data) {
+    document.querySelector('.movies__container').style.display = 'none'
+    document.querySelector('.fa-spinner').style.display = 'block'
     let userInput = searchField.value
     let dataFE = await data.json()
     let movies = dataFE.results
     if (movies.length === 0) {
         resultMessage.innerHTML = `No results for "${userInput}":`
+        document.querySelector('.fa-spinner').style.display = 'none'
         nothingFound()
     } else {
         noResult.innerHTML = ''
         query.innerHTML = movies.map((movies) => movieHTML(movies)).join('')
+        document.querySelector('.movies__container').style.display = 'flex'
+        document.querySelector('.fa-spinner').style.display = 'none'
     }
 }
 
@@ -100,6 +105,8 @@ async function getSearchResult() {
 }
 
 function clearResults() {
+    let filters = document.querySelectorAll('.filter');
+    filters.forEach((filterElement) => filterElement.classList.remove('filter__active'));
     resultMessage.innerHTML = 'Top 20 movies:'
     let searchValue = document.getElementById('searchField')
     searchValue.value !== '' ? searchValue.value = "" : null
@@ -118,7 +125,7 @@ function redirectSearch() {
 }
 
 function movieHTML(movies) {
-    let releaseDate = movies.release_date || movies.first_air_date
+    let releaseDate = movies.release_date || movies.first_air_date || ''
     if (movies.poster_path) {
         return `<div class="movie__poster">
             <img src="https://image.tmdb.org/t/p/original/${movies.poster_path}" alt="">
@@ -143,10 +150,6 @@ function movieHTML(movies) {
 function toggleActive(filter) {
     let filters = document.querySelectorAll('.filter');
     let filterClass = document.querySelector(`.${filter}`);
-
-    // filters.forEach((filterElement) => {
-    //     filterElement.classList.remove('filter__active');
-    // });
     if (!filterClass.className.includes('filter__active')) {
         filters.forEach(filter => {
             if (filter.className.includes('filter__active')) {
@@ -215,10 +218,14 @@ async function filterRomance() {
     }
 }
 
+function btnLoadingState() {
+    document.querySelector('.fa-magnifying-glass').style.display = 'none'
+    document.querySelector('.fa-spinner').style.display = 'block'
+}
+
 function reloadDaTing() {
     urlUpdate()
     searchOrClear()
-    clearResults()
 }
 
 getDefault()
