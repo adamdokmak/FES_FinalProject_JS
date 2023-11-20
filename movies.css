@@ -18,7 +18,7 @@ body {
 }
 
 #main-page {
-    background-color: #382a51;
+    background-color: #2a474f;
     height: 350px;
 }
 
@@ -70,11 +70,11 @@ nav {
 }
 
 .contact__container:hover {
-    background-color: #FF338F;
+    background-color: #61ABB5;
 }
 
 .contact__btn {
-    color: #602FB1;
+    color: #61ABB5;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -168,7 +168,7 @@ nav {
 
 .fa-magnifying-glass,
 .fa-xmark {
-    color: #602FB1;
+    color: #61ABB5;
     scale: 2;
     cursor: pointer;
     transition: all 200ms ease;
@@ -176,7 +176,7 @@ nav {
 
 .fa-magnifying-glass:hover,
 .fa-xmark:hover {
-    color: #FF338F;
+    color: #61ABB5;
 }
 
 /*Header End*/
@@ -203,7 +203,7 @@ nav {
 }
 
 .no-result__text {
-    color: #602FB1;
+    color: #61ABB5;
     font-size: 44px;
     text-align: center;
 }
@@ -337,7 +337,7 @@ nav {
     margin-left: 12px;
     width: 120px;
     height: 30px;
-    border: #602FB1 2px solid;
+    border: #61ABB5 2px solid;
     border-radius: 24px;
     box-shadow: 0 0 0 0 #6030b1;
     transition: all 200ms ease;
@@ -345,7 +345,7 @@ nav {
 }
 
 .filter:hover {
-    box-shadow: 3px 3px 1px 1px #6030b1;
+    box-shadow: 3px 3px 1px 1px #61ABB5;
 }
 
 .filter__title {
@@ -353,15 +353,15 @@ nav {
     white-space: nowrap;
     font-size: 16px;
     font-weight: 500;
-    color: #382a51;
+    color: #61ABB5;
 }
 
 .filter:hover .filter__title {
-    color: #602FB1;
+    color: #61ABB5;
 }
 
 .filter__active {
-    background-color: #6030b1;
+    background-color: #61ABB5;
 }
 
 .filter__active .filter__title {
@@ -381,7 +381,7 @@ nav {
     margin: 0 10px;
     width: 25px;
     height: 25px;
-    background-color: #602FB1;
+    background-color: #61ABB5;
     cursor: pointer;
     border-radius: 24px;
 }

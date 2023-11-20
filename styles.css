@@ -50,7 +50,7 @@ nav {
 }
 
 .active {
-    color: #602FB1;
+    color: #61ABB5;
 }
 
 .contact__container {
@@ -59,13 +59,13 @@ nav {
     justify-content: center;
     height: 45px;
     width: 130px;
-    background-color: #602FB1;
+    background-color: #61ABB5;
     border-radius: 24px;
     transition: all 200ms ease;
 }
 
 .contact__container:hover {
-    background-color: #5D3EFF;
+    background-color: #179fb4;
 }
 
 .contact__btn {
@@ -99,7 +99,7 @@ nav {
 }
 
 .link__hover--active:after {
-    background-color: #602FB1;
+    background-color: #61ABB5;
 }
 
 /*Navigation bar END*/
@@ -126,7 +126,7 @@ nav {
     line-height: 64px;
     margin: 0 0 30px;
     font-size: 50px;
-    color: #602FB1;
+    color: #61ABB5;
 }
 
 .hero__sub-title {
@@ -135,7 +135,7 @@ nav {
 }
 
 .hero__sub-title--color {
-    color: #602FB1;
+    color: #61ABB5;
 }
 
 .search-bar__content {
@@ -156,7 +156,7 @@ nav {
 }
 
 .search-bar:focus {
-    box-shadow: 0 0 0 1px #6030b1;
+    box-shadow: 0 0 0 1px #61ABB5;
 }
 
 .search-bar__button {
@@ -165,14 +165,14 @@ nav {
     margin-left: 24px;
     height: 70px;
     width: 100px;
-    box-shadow: 7px 7px 14px rgba(134, 93, 204, .3);
-    background-color: #602FB1;
+    box-shadow: 7px 7px 14px rgba(97, 171, 181, .3);
+    background-color: #61ABB5;
     cursor: pointer;
     transition: all 200ms ease;
 }
 
 .search-bar__button:hover {
-    background-color: #FF338F;
+    background-color: #179fb4;
 }
 
 .fa-magnifying-glass {
