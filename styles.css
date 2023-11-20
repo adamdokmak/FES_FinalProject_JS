@@ -15,6 +15,7 @@ a {
 
 body {
     height: 100vh;
+    overflow-x: hidden;
 }
 
 /*Navigation bar*/
@@ -75,14 +76,12 @@ nav {
 }
 
 .link__hover,
-.link__hover--active
-{
+.link__hover--active {
     position: relative;
 }
 
 .link__hover:after,
-.link__hover--active:after
-{
+.link__hover--active:after {
     content: '';
     position: absolute;
     bottom: -3px;
@@ -94,8 +93,7 @@ nav {
 }
 
 .link__hover:hover:after,
-.link__hover--active:hover:after
-{
+.link__hover--active:hover:after {
     left: 0;
     width: 100%;
 }
@@ -113,6 +111,7 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
 .header__content {
     display: flex;
     flex-direction: column;
@@ -129,6 +128,7 @@ nav {
     font-size: 50px;
     color: #602FB1;
 }
+
 .hero__sub-title {
     margin: 0 0 40px;
     font-size: 30px;
@@ -137,11 +137,13 @@ nav {
 .hero__sub-title--color {
     color: #602FB1;
 }
+
 .search-bar__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .search-bar {
     outline: none;
     font-size: 24px;
@@ -152,6 +154,7 @@ nav {
     width: 500px;
     transition: all 200ms ease;
 }
+
 .search-bar:focus {
     box-shadow: 0 0 0 1px #6030b1;
 }
@@ -162,7 +165,7 @@ nav {
     margin-left: 24px;
     height: 70px;
     width: 100px;
-    box-shadow: 7px 7px 14px rgba(134,93,204,.3);
+    box-shadow: 7px 7px 14px rgba(134, 93, 204, .3);
     background-color: #602FB1;
     cursor: pointer;
     transition: all 200ms ease;
@@ -171,14 +174,17 @@ nav {
 .search-bar__button:hover {
     background-color: #FF338F;
 }
+
 .fa-magnifying-glass {
     scale: 2.6;
 }
+
 .hero__img {
     margin-top: 25px;
     max-width: 800px;
     height: 50vh;
 }
+
 /*Main END*/
 
 .fa-spinner {
@@ -186,4 +192,47 @@ nav {
     display: none;
 }
 
+@media only screen and (max-width: 992px) {
+    .search-bar {
+        width: 400px;
+    }
+
+    .hero__title {
+        font-size: 48px;
+    }
+
+    .hero__sub-title {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .search-bar {
+        width: 300px;
+    }
+    .hero__title {
+        font-size: 44px;
+    }
+
+    .hero__sub-title {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .search-bar {
+        width: 300px;
+        transform: translateX(55px);
+    }
+
+    .search-bar__button {
+        transform: translateX(-45px);
+        width: 65px;
+        height: 55px;
+    }
+
+    .fa-magnifying-glass {
+        scale: 2;
+    }
+}
 

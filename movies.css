@@ -175,7 +175,7 @@ nav {
 }
 
 .fa-magnifying-glass:hover,
-.fa-xmark:hover{
+.fa-xmark:hover {
     color: #FF338F;
 }
 
@@ -216,6 +216,7 @@ nav {
 
 .movies__container {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
@@ -225,7 +226,8 @@ nav {
     position: absolute;
     top: 80%;
     left: 50%;
-    scale: 10;
+    transform: translate(-80%, -50%);
+    scale: 3;
     display: none;
 }
 
@@ -301,10 +303,12 @@ nav {
 .main__title {
     font-weight: 400;
 }
+
 .movie__poster--title {
     font-weight: 500;
     font-size: 22px;
 }
+
 .movie__poster--sub-title {
     font-weight: 400;
     font-size: 20px;
@@ -319,6 +323,9 @@ nav {
 
 .filters__contianer {
     display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
@@ -336,6 +343,7 @@ nav {
     transition: all 200ms ease;
     cursor: pointer;
 }
+
 .filter:hover {
     box-shadow: 3px 3px 1px 1px #6030b1;
 }
@@ -355,9 +363,11 @@ nav {
 .filter__active {
     background-color: #6030b1;
 }
+
 .filter__active .filter__title {
     color: white;
 }
+
 .filter__active:hover .filter__title {
     color: white;
 }
@@ -366,6 +376,7 @@ nav {
     box-shadow: none;
 
 }
+
 .page__back, .page__next {
     margin: 0 10px;
     width: 25px;
@@ -387,4 +398,38 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media only screen and (max-width: 992px) {
+    .search-bar {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 788px) {
+    .search-bar {
+        width: 400px;
+    }
+
+    .search-results {
+        justify-content: center;
+    }
+
+    .main__title {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .search-bar {
+        width: 300px;
+    }
+
+    .search-results {
+        justify-content: center;
+    }
+
+    .main__title {
+        display: none;
+    }
 }
